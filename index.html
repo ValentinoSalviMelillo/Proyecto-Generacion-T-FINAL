@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación Web de Gestión de Tareas Personales</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h3>Aplicación Web de Gestión de Tareas</h3>
+    
+    <input type="text" id="input" placeholder="Ingrese nueva tarea">
+    <select id="priority">
+        <option value="Alta">Alta</option>
+        <option value="Media">Media</option>
+        <option value="Baja">Baja</option>
+    </select>
+    <input type="submit" id="button" value="+" onclick="adicionar()">
+    
+    <div class="body">
+        <div id="container"></div>
+    </div>
+
+    <div class="footer">
+        <p class="footerChild">Tareas pendientes: </p>
+        <p class="footerChild">Completadas: </p>
+    </div>
+
+    <div class="progress-container">
+        <label for="progress-bar" class="progress-label">Progreso general:</label>
+        <progress id="progress-bar" value="0" max="100"></progress>
+        <span id="progress-percentage">0%</span>
+    </div>
+  
+    <script src="https://kit.fontawesome.com/8f3aaeb06e.js" crossorigin="anonymous"></script>
+    <script src="javascript.js"></script>
+</body>
+</html>
